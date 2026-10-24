@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Enfusion Actions: animation editing, animal fitting and native TXA workflows for Arma Reforger creators. Watch the tutorial, explore the tools and follow development.">
+  <meta name="theme-color" content="#191b17">
+  <title>Enfusion Actions — Make motion yours.</title>
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="header wrap">
+  <a class="brand" href="#"><img src="assets/logo.svg" width="36" height="36" alt=""><span>ENFUSION<span class="brand-sub">ACTIONS / CREATOR TOOLS</span></span></a>
+  <nav aria-label="Main navigation"><a href="#features">Features</a><a href="#tutorial">Tutorial</a><a href="#roadmap">What’s next</a><a class="nav-source" href="https://github.com/josharghhh/enfusion-actions-site">GitHub <span aria-hidden="true">↗</span></a></nav>
+</header>
+<main id="main">
+  <section class="hero wrap">
+    <div class="hero-copy">
+      <p class="eyebrow"><span class="status-dot"></span> FOR ARMA REFORGER / IN ACTIVE DEVELOPMENT</p>
+      <h1>Make motion<br><em>yours.</em></h1>
+      <p class="intro">Shape a walk. Fix a footstep. Bring a creature to life. Animation tools built around Enfusion’s native workflow.</p>
+      <div class="actions"><a class="button primary" href="#tutorial"><span aria-hidden="true">▶</span> Watch the walkthrough</a><a class="button secondary" href="#start">Get started <span aria-hidden="true">↗</span></a></div>
+      <p class="hero-meta">TXA editing <span>/</span> Character & animal tools <span>/</span> Workbench handoff</p>
+    </div>
+    <a class="hero-preview" href="#tutorial" aria-label="Go to the creator walkthrough">
+      <div class="preview-bar"><span><i></i> THE CREATOR WORKSPACE</span><span>01 / PREVIEW</span></div>
+      <img src="assets/walkthrough-poster.jpg" width="1600" height="900" alt="Enfusion Actions editor with a Reforger character, clip library, motion controls and timeline">
+      <div class="preview-caption"><span class="play-circle" aria-hidden="true">▶</span><span>From first launch to saved motion<small>Creator walkthrough · 1 min 49 sec</small></span><span class="arrow" aria-hidden="true">↗</span></div>
+    </a>
+  </section>
+  <div class="workflow-strip"><div class="wrap"><span><b>01</b> LOAD A CLIP OR MODEL</span><span><b>02</b> SHAPE THE MOTION</span><span><b>03</b> SAVE & CHECK IN WORKBENCH</span></div></div>
+  <section id="features" class="section wrap">
+    <div class="section-heading"><div><p class="eyebrow">THE TOOLKIT</p><h2>One workflow.<br>More ways to create.</h2></div><p>Explore what’s available, where to find it, and what still needs a test in your project.</p></div>
+    <div class="explorer-toolbar"><div id="feature-filters" class="pills" role="group" aria-label="Feature categories"><button class="active" aria-pressed="true" data-category="all">All tools</button><button aria-pressed="false" data-category="edit">Edit motion</button><button aria-pressed="false" data-category="creatures">Characters & creatures</button><button aria-pressed="false" data-category="pipeline">Pipeline</button></div><label class="search"><span class="sr-only">Search features</span><input id="feature-search" type="search" placeholder="Find a feature…" autocomplete="off"></label></div>
+    <p id="feature-count" class="sr-only" role="status"></p>
+    <div id="feature-grid" class="feature-grid"></div>
+    <p id="no-results" hidden>No matching tools. Try “foot”, “rig”, “events” or clear your search.</p>
+    <noscript><p>Enable JavaScript to explore the feature cards, or browse the <a href="https://github.com/josharghhh/enfusion-actions/tree/main/docs/guide">complete user guide</a>.</p></noscript>
+  </section>
+  <section id="tutorial" class="tutorial-section">
+    <div class="wrap section">
+      <div class="section-heading"><div><p class="eyebrow">SEE IT IN ACTION</p><h2>Your first clip,<br>from start to save.</h2></div><p>The existing creator walkthrough covers setup, optional text-to-motion, foot timing and saving into an addon. Download and generation waits are sped up.</p></div>
+      <div class="tutorial-grid"><div><video id="walkthrough" controls playsinline preload="metadata" poster="assets/walkthrough-poster.jpg" aria-label="Enfusion Actions creator walkthrough with on-screen instructional captions"><source src="assets/creator-walkthrough.mp4" type="video/mp4">Your browser cannot play this video. <a href="assets/creator-walkthrough.mp4">Download the walkthrough</a>.</video><div class="video-footer"><span>Recorded walkthrough · earlier UI revision</span><a href="assets/creator-walkthrough.mp4" download>Download MP4 <span aria-hidden="true">↓</span></a></div></div>
+      <aside class="watch-notes"><p class="eyebrow">WHAT YOU’LL LEARN</p><ol><li><b>Get the workspace ready</b><span>Run setup and resolve missing components.</span></li><li><b>Generate or choose motion</b><span>Kimodo is optional; existing clips work too.</span></li><li><b>Inspect the movement</b><span>Review foot contacts, footprints and in-place travel.</span></li><li><b>Save into your addon</b><span>Export TXA, then import and check the ANM in Workbench.</span></li></ol><a class="text-link" href="https://github.com/josharghhh/enfusion-actions/blob/main/docs/guide/FIRST_TEST.md">First-test guide (private access) ↗</a></aside></div>
+      <details class="video-summary"><summary>Read the walkthrough steps</summary><p>Open the UI from Workbench’s Enfusion Actions plugin. The setup check identifies missing project files and the preview character; the sample character is obtained separately from Bohemia’s public samples.</p><p>The recording then sets up Kimodo, enters a motion prompt and generates a clip. This optional integration needs its own local server. You can instead open an existing library clip or TXA.</p><p>Inspect the foot-contact lanes and footprints. Enable In place and Follow path to remove travelling motion while retaining the step sway. Save the resulting TXA into the selected addon. In Workbench, use Import saved clips, check the build log and preview the ANM on the matching model.</p><p>The video has on-screen instructional text. Some labels have changed since it was recorded; the linked first-test guide reflects the newer workflow.</p></details>
+    </div>
+  </section>
+  <section id="start" class="section wrap start-grid">
+    <div><p class="eyebrow">FIRST FLIGHT</p><h2>Start small.<br>See it working.</h2><p class="intro small">Make one edit, save one clip, check it on the right model. Then build from there.</p><a class="button primary" href="https://github.com/josharghhh/enfusion-actions">Private development repo <span aria-hidden="true">↗</span></a><p class="muted">Tool source is currently private; public release comes after review.<br>Windows · Arma Reforger Tools · Python 3.11+<br>Blender 4.2+ is needed for fitted model export.</p></div>
+    <div class="setup-panel"><div class="setup-top"><span>YOUR SETUP CHECKLIST</span><output id="setup-progress" aria-live="polite">0 / 4</output></div><progress id="setup-meter" max="4" value="0" aria-label="Setup completion"></progress>
+      <label class="check-row"><input type="checkbox" data-step="install"><span><b>Install the tools</b><small>Put the checkout in addons/Enfusion-Actions and run install.cmd.</small></span><span class="step-number">01</span></label>
+      <label class="check-row"><input type="checkbox" data-step="launch"><span><b>Open your workspace</b><small>Open addon.gproj in Workbench → Plugins → Enfusion Actions → Open UI.</small></span><span class="step-number">02</span></label>
+      <label class="check-row"><input type="checkbox" data-step="edit"><span><b>Make a first edit</b><small>Load a compatible clip, adjust a pose or event, and save under a new name.</small></span><span class="step-number">03</span></label>
+      <label class="check-row"><input type="checkbox" data-step="verify"><span><b>Check the native result</b><small>Import saved clips in Workbench. Verify the ANM on its matching XOB.</small></span><span class="step-number">04</span></label>
+      <div class="setup-bottom"><span id="storage-note">Progress stays in this browser.</span><button id="reset-checklist">Reset</button></div>
+    </div>
+  </section>
+  <section id="roadmap" class="roadmap-section"><div class="section wrap">
+    <div class="section-heading"><div><p class="eyebrow">ON THE WORKBENCH</p><h2>Built. Being tested.<br>Coming into focus.</h2></div><p>A clear view of the work. Available features, experimental workflows, and proposed next steps—without promised release dates.</p></div>
+    <div id="roadmap-filters" class="pills" role="group" aria-label="Roadmap status"><button class="active" aria-pressed="true" data-status="all">Everything</button><button aria-pressed="false" data-status="available">Available</button><button aria-pressed="false" data-status="testing">Testing</button><button aria-pressed="false" data-status="proposed">Proposed</button></div>
+    <div id="roadmap-list" class="roadmap-list"></div>
+    <p class="roadmap-note">Snapshot: 24 October 2026. “Available” describes implemented tools, not universal compatibility. Proposals are priorities for discussion, not delivery commitments.</p>
+  </div></section>
+  <section class="section wrap faq"><div><p class="eyebrow">GOOD TO KNOW</p><h2>A few practical answers.</h2></div><div>
+    <details><summary>Is this the editor running in my browser?</summary><p>This is the project website. The actual editor runs locally and is launched from Workbench, or with the repository’s Python server. The website doesn’t upload models or edit your addon.</p></details>
+    <details><summary>Do I need AI or a GPU setup to edit clips?</summary><p>No. Core TXA editing does not need Kimodo, PyTorch, NumPy or Blender. Learned rig suggestions and text-to-motion are optional workflows with separate setup requirements.</p></details>
+    <details><summary>Does exporting an animal make it game-ready?</summary><p>Export gives you the fitted model and matching animation files. Materials, collision, LODs, animation graphs, controllers, AI and gameplay prefabs still need their own setup and runtime testing.</p></details>
+    <details><summary>When can I download the tool?</summary><p>The tool is still being developed privately. This public repository currently contains the website and tutorial only. The tool source will be published here when the creator is happy with it; no release date is promised. Links to the development repository and detailed guides require existing repository access.</p></details>
+  </div></section>
+  <section class="closing wrap"><p class="eyebrow">MAKE SOMETHING THAT MOVES.</p><h2>Bring your next animation.</h2><div class="actions"><a class="button primary" href="https://github.com/josharghhh/enfusion-actions-site">Explore the public project ↗</a><a class="button secondary" href="https://github.com/josharghhh/enfusion-actions-site/issues">Report a bug or suggest a feature</a></div></section>
+</main>
+<footer class="wrap"><a class="brand" href="#"><img src="assets/logo.svg" width="30" height="30" alt=""><span>ENFUSION ACTIONS</span></a><p>Independent creator tools for Arma Reforger.<br>Not an official Bohemia Interactive product.</p><a href="https://github.com/josharghhh/enfusion-actions/tree/main/docs/guide">Guides (private access) ↗</a></footer>
+</body>
+</html>
